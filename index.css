@@ -1,0 +1,89 @@
+#logo {
+    width: 120px;
+    height: 80px;
+}
+* {
+    font-family: "Press Start 2P";
+}
+.none {
+    display: none;
+}
+.title2 {
+    display: none;
+    inline-size: 100%;
+    background-color: rgb(84, 168, 236);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+.burger {
+    padding: 50px;
+    list-style: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 50px;
+    table-layout: auto;
+}
+body {
+    background-image: url(background.png);
+}
+.burger a{
+    margin: 20px;
+}
+h1 {
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 25px;
+    margin-left: 30px;
+}
+a:hover {
+    color: yellow;
+    top: 20px;
+}
+.menu {
+    position: absolute;
+}
+.title {
+    display: inline-flex;
+    background-color: black;
+    inline-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8%;
+}
+.content p {
+    margin-top: 120px;
+}
+p {
+    color: whitesmoke;
+}
+@media only screen and (max-width: 900px) {
+    .title {
+        display: none;
+    }
+    .title2 {
+        display: inline-flex;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .content {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
